@@ -1,0 +1,102 @@
+<html>
+<head>
+<!-- bringing this in because of example here: https://www.w3schools.com/howto/howto_css_download_button.asp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<h1>Howard County Beers</h1>
+<h2>Survey</h2>
+<br>
+<!--  -->
+<form  method="get" class="get_form" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php">
+    <fieldset>
+        <legend><em>Howard County Beer Survey</em></legend>
+        <fieldset>
+            <p><em>Which brewery is your favorite?</em></p><br>
+            <input type="radio" id="blackFlag" name="topBrewery" value="blackFlag">
+            <label for="blackFlag">Black Flag</label><br><br>
+            <input type="radio" id="hysteria" name="topBrewery" value="hysteria">
+            <label for="hysteria">Hysteria</label><br><br>
+            <input type="radio" id="jailbreak" name="topBrewery" value="jailbreak">
+            <label for="jailbreak">Jailbreak</label><br><br>
+            <input type="radio" id="manorHill" name="topBrewery" value="manorHill">
+            <label for="manorHill">Manor Hill</label><br><br>
+            <input type="radio" id="sapwoodCellars" name="topBrewery" value="sapwoodCellars">
+            <label for="sapwoodCellars">Sapwood Cellars</label><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <p><em>Rate each brewery</em></p><br>
+          <label for="blackFlagRating">Black Flag</label>
+          <label for="oneStar">⋆</label>
+          <input type="radio" id="oneStar" name="blackFlagRating" value=1>
+          <label for="twoStar">⋆⋆</label>
+          <input type="radio" id="twoStar" name="blackFlagRating" value=2>
+          <label for="threeStar">⋆⋆⋆</label>
+          <input type="radio" id="threeStar" name="blackFlagRating" value=3>
+          <label for="fourStar">⋆⋆⋆⋆</label>
+          <input type="radio" id="fourStar" name="blackFlagRating" value=4>
+          <label for="fiveStar">⋆⋆⋆⋆⋆</label>
+          <input type="radio" id="fiveStar" name="blackFlagRating" value=5>
+          <br><br><br>
+          <label for="hysteriaRating">Hysteria</label>
+          <label for="oneStar">⋆</label>
+          <input type="radio" id="oneStar" name="hysteriaRating" value=1>
+          <label for="twoStar">⋆⋆</label>
+          <input type="radio" id="twoStar" name="hysteriaRating" value=2>
+          <label for="threeStar">⋆⋆⋆</label>
+          <input type="radio" id="threeStar" name="hysteriaRating" value=3>
+          <label for="fourStar">⋆⋆⋆⋆</label>
+          <input type="radio" id="fourStar" name="hysteriaRating" value=4>
+          <label for="fiveStar">⋆⋆⋆⋆⋆</label>
+          <input type="radio" id="fiveStar" name="hysteriaRating" value=5>
+          <br><br><br>
+          <label for="jailbreakRating">Jailbreak</label>
+          <label for="oneStar">⋆</label>
+          <input type="radio" id="oneStar" name="jailbreakRating" value=1>
+          <label for="twoStar">⋆⋆</label>
+          <input type="radio" id="twoStar" name="jailbreakRating" value=2>
+          <label for="threeStar">⋆⋆⋆</label>
+          <input type="radio" id="threeStar" name="jailbreakRating" value=3>
+          <label for="fourStar">⋆⋆⋆⋆</label>
+          <input type="radio" id="fourStar" name="jailbreakRating" value=4>
+          <label for="fiveStar">⋆⋆⋆⋆⋆</label>
+          <input type="radio" id="fiveStar" name="jailbreakRating" value=5>
+          <br><br><br>
+          <label for="manorHillRating">Manor Hill</label>
+          <label for="oneStar">⋆</label>
+          <input type="radio" id="oneStar" name="manorHillRating" value=1>
+          <label for="twoStar">⋆⋆</label>
+          <input type="radio" id="twoStar" name="manorHillRating" value=2>
+          <label for="threeStar">⋆⋆⋆</label>
+          <input type="radio" id="threeStar" name="manorHillRating" value=3>
+          <label for="fourStar">⋆⋆⋆⋆</label>
+          <input type="radio" id="fourStar" name="manorHillRating" value=4>
+          <label for="fiveStar">⋆⋆⋆⋆⋆</label>
+          <input type="radio" id="fiveStar" name="manorHillRating" value=5>
+          <br><br><br>
+          <label for="sapwoodCellarsRating">Sapwood Cellars</label>
+          <label for="oneStar">⋆</label>
+          <input type="radio" id="oneStar" name="sapwoodCellarsRating" value=1>
+          <label for="twoStar">⋆⋆</label>
+          <input type="radio" id="twoStar" name="sapwoodCellarsRating" value=2>
+          <label for="threeStar">⋆⋆⋆</label>
+          <input type="radio" id="threeStar" name="sapwoodCellarsRating" value=3>
+          <label for="fourStar">⋆⋆⋆⋆</label>
+          <input type="radio" id="fourStar" name="sapwoodCellarsRating" value=4>
+          <label for="fiveStar">⋆⋆⋆⋆⋆</label>
+          <input type="radio" id="fiveStar" name="sapwoodCellarsRating" value=5>
+          <br>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+<br>
+Want to know which one is my favorite? Click the button to download an image and find out.
+<br>
+<!-- Made button from help from: https://www.w3schools.com/howto/howto_css_download_button.asp -->
+<button class="btn"><i class="fa fa-download"></i><a href="https://marylandbeer.org/wp-content/uploads/2015/11/HBC_Logo_Main.png" download>My Favorite Brewery</a></button>
+
+</body>
+</html>
