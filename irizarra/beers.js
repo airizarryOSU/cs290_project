@@ -21,13 +21,13 @@ app.get('/',function(req,res){
 //to run the python file in node I
 //adapted code from https://medium.com/swlh/run-python-script-from-node-js-and-send-data-to-browser-15677fcf199f
 app.get('/blackFlag',function(req,res){
-  var dataToSend;
+  let dataToSend = '';
   // spawn new child process to call the python script
   const python = spawn('python', ['blackflag.py']);
   // collect data from script
   python.stdout.on('data', function (data) {
    console.log('Pipe data from python script ...');
-   dataToSend = data.toString();
+   dataToSend += data.toString();
   });
   // in close event we are sure that stream from child process is closed
   python.on('close', (code) => {
@@ -42,13 +42,13 @@ app.get('/hysteria',function(req,res){
 });
 
 app.get('/jailbreak',function(req,res){
-  var dataToSend;
+  let dataToSend = '';
   // spawn new child process to call the python script
   const python = spawn('python', ['jailbreak.py']);
   // collect data from script
   python.stdout.on('data', function (data) {
    console.log('Pipe data from python script ...');
-   dataToSend = data.toString();
+   dataToSend += data.toString();
   });
   // in close event we are sure that stream from child process is closed
   python.on('close', (code) => {
