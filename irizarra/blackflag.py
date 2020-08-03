@@ -3,6 +3,6 @@ import requests
 
 url = "https://blackflagbrewingco.com/"
 html = requests.get(url)
-soup = BeautifulSoup(html.text, "html5lib")
+soup = BeautifulSoup(html.text, "html.parser")
 beerTable = soup.select("table",class_ = "table table-striped taplist")[1]
 print(beerTable)
